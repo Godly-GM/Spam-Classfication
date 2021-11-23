@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<body>
+	<table>
+		{% for item in my_list %}
+	    	<tr><td>{{ item }}</td></tr>
+	    {% endfor %}
+	</table>
+</body>
+{% endblock %}

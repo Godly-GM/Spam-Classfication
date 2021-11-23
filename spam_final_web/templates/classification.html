@@ -1,0 +1,56 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<body>
+	<table>
+		<tr>
+			<td>
+				Model
+			</td>
+			<td>
+				Accuracy
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Knn :
+			</td>
+			<td>
+				{{ knacc }}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				DT
+			</td>
+			<td>
+				{{ dtacc }}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				SVM
+			</td>
+			<td>
+				{{ svnacc }}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Random Forrest
+			</td>
+			<td>
+				{{ acc_rf }}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				LR
+			</td>
+			<td>
+				{{ acc_lr }}
+			</td>
+		</tr>
+	</table>
+</body>
+{% endblock %}

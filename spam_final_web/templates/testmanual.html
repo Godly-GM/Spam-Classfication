@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<body>
+		<form method="POST">
+			<table border="1">
+				<tr>
+					<td>Message</td>
+					<td><input type="text" name="msg"></td>
+
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" name="submit"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>{{ res }}</td>
+				</tr>
+				
+			</table>
+			
+		</form>
+</body>
+{% endblock %}
